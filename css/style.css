@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Salsa&display=swap');
+
+body{
+  background-color: #f0f0f0;
+  font-family: "Outfit", sans-serif;
+  color: #332424;
+}
+header{
+  position: fixed;
+  background-color: #eed0dc;
+  padding: 1vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* text-align: center;
+  justify-content: center; */
+  z-index: 1000;
+  color: #554a51;
+  
+}
+
+#content {
+  margin-top: 22vh; 
+  padding: 10px 0px 0px 0px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+h2, p{
+    text-align: center;
+    justify-content: center;
+}
+.title {
+  font-family: "Salsa", cursive;
+  color: rgb(55, 38, 38);
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.square {
+  background-color: #6e4d4d;
+  height: 5vh;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  margin: 3vh;
+  justify-content: center;
+}
+
+.button a:hover {
+  background-color: #dd4c86; 
+  color: #fff;
+}
+
+
+a {
+  padding: 1.5vh;
+  cursor: pointer;
+  border: 0.1vh solid #ccc;
+  border-radius: 1.5vh;
+  margin: 1vh;
+}
+
+/* button active */
+.active {
+  background-color: #eb71a2;
+  color: #fff;
+}
+
+#welcome{
+  width: 100%;
+  height: 100%;
+}
+
+#welcome-btn{
+  padding-bottom: 10px;
+}
+
+/* section */
+#square {
+  display: none;
+  padding: 20px;
+  /* background-color: #f0f0f0; */
+  border: 1px solid #ccc;
+  margin:10px;
+  margin-bottom: 3px;
+}
+#square-area {
+  display: none;
+  padding: 0px;
+  /* background-color: #f0f0f0; */
+  padding-bottom: 50px;
+  margin:10px;
+  margin-bottom: 0px;
+  border: 1px solid #ccc;
+}
+
+#square-area .luas-persegi{
+background-color: #6e4d4d;
+color: #fff;
+padding: 10px;
+margin: 0px;
+margin-top: -11px;
+  /* background-color: #f0f0f0; */
+}
+#square-perimeter {
+  display: none;
+  padding: 0px;
+  padding-bottom: 50px;
+  margin:10px;
+  margin-bottom: 0px;
+  border: 1px solid #ccc;
+  /* background-color: #f0f0f0; */
+}
+#square-perimeter .keliling-persegi{
+  background-color: #6e4d4d;
+  color: #fff;
+  padding: 10px;
+  margin: 0px;
+  margin-top: -11px;
+}
+
+#rectangle {
+  display: none;
+  padding: 20px;
+  /* background-color: #f0f0f0; */
+  border: 1px solid #ccc;
+  margin:10px;
+  margin-bottom: 3px;
+}
+#rectangle-area {
+  display: none;
+  padding: 0px;
+  padding-bottom: 50px;
+  margin:10px;
+  margin-bottom: 0px;
+  border: 1px solid #ccc;
+  /* background-color: #f0f0f0; */
+}
+#rectangle-area .luas-persegi-panjang{
+  background-color: #6e4d4d;
+  color: #fff;
+  padding: 10px;
+  margin: 0px;
+  margin-top: -11px;
+}
+#rectangle-perimeter {
+  display: none;
+  padding: 0px;
+  padding-bottom: 50px;
+  margin:10px;
+  margin-bottom: 0px;
+  border: 1px solid #ccc;
+  /* background-color: #f0f0f0; */
+}
+#rectangle-perimeter .keliling-persegi-panjang{
+  background-color: #6e4d4d;
+  color: #fff;
+  padding: 10px;
+  margin: 0px;
+  margin-top: -11px;
+}
+
+img{
+  margin-top: 50px;
+  width: auto;
+  height: 250px;
+  text-align: center;
+}
+
+#square-area {
+  text-align: center;
+}
+
+#square-perimeter {
+  text-align: center;
+}
+
+#rectangle-area {
+  text-align: center;
+}
+
+#rectangle-perimeter {
+  text-align: center;
+}
+
+#side{
+  text-align: center;
+  margin: 10px;
+  width: 25%;
+}
+
+#length{
+  text-align: center;
+  margin-top: 10px;
+  width: 37%;
+}
+#width{
+  text-align: center;
+  margin-top: 10px;
+  width: 37%;
+}

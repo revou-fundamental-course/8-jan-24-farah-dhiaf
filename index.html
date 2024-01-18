@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Katik</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h2><span class="title">Katik</span> Kalkulator Matematik</h2>
+    </header>
+    <div id="content">
+        <div id="welcome">
+            <h2>Welcome to Katik</h2>
+            <p>Hai sobat! Selamat datang di Katik :D</br>
+            Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling dari bangun datar.
+            </p>
+        </div>
+        <div id="welcome-btn">
+            <div class="button">
+                <a id="btn-square" onclick="showSection('square')">Persegi</a>
+                <a id="btn-rectangle" onclick="showSection('rectangle')">Persegi Panjang</a>
+            </div>
+        
+            <div id="square">
+                <h2>Persegi</h2>
+                <p>Pilih rumus persegi yang ingin Anda hitung.</p>
+                <div class="button">
+                    <a id="btn-square-area" onclick="showSection2('square-area')">Luas</a>
+                    <a id="btn-square-perimeter" onclick="showSection2('square-perimeter')">Keliling</a>
+                </div>
+            </div>
+        
+            <div id="rectangle">
+                <h2>Persegi Panjang</h2>
+                <p>Pilih rumus persegi panjang yang ingin Anda hitung.</p>
+                <div class="button">
+                    <a id="btn-rectangle-area" onclick="showSection2('rectangle-area')">Luas</a>
+                    <a id="btn-rectangle-perimeter" onclick="showSection2('rectangle-perimeter')">Keliling</a>
+                </div>
+            </div>
+    
+            <div id="square-area">
+                <div class="luas-persegi">
+                    <h2>Luas Persegi</h2>
+                </div>
+                <img src="img/square.jpg" alt="square"/>
+                <p>Masukkan nilai sisi untuk menghitung luas persegi.</p>
+                <form action="">
+                    <label for="side">Sisi:</label><br>
+                    <input type="number" id="side" name="side"><br>
+                    <input type="submit" value="Submit">
+                    <button type="reset" onclick="resetForm('square-area')">Reset</button>
+                </form> 
+                <div id="result-square-area" class="result"></div>
+            </div>
+            <div id="square-perimeter">
+                <div class="keliling-persegi">
+                    <h2>Keliling Persegi</h2>
+                </div> 
+                <img src="img/square.jpg" alt="square"/>
+                <p>Masukkan nilai sisi untuk menghitung keliling persegi.</p>
+                <form>
+                    <label for="side">Sisi:</label><br>
+                    <input type="number" id="side" name="side"><br>
+                    <input type="submit" value="Submit">
+                    <button type="reset" onclick="resetForm('square-perimeter')">Reset</button>
+                </form> 
+                <div id="result-square-perimeter" class="result"></div>
+            </div>
+            <div id="rectangle-area">
+                <div class="luas-persegi-panjang">
+                    <h2>Luas Persegi Panjang</h2>
+                </div>
+                <!-- <h2>Luas Persegi Panjang</h2> -->
+                <img src="img/rectangle.jpeg" alt="rectangle"/>
+                <p>Masukkan nilai panjang dan lebar untuk menghitung luas persegi panjang.</p>
+                <form action="">
+                    <label for="length">Panjang:</label><br>
+                    <input type="number" id="length" name="length"><br><br>
+                    <label for="width">Lebar:</label><br>
+                    <input type="number" id="width" name="width"><br><br>
+                    <input id="submit" type="submit" value="Submit">
+                    <button type="reset" onclick="resetForm('rectangle-area')">Reset</button>
+                </form> 
+                <div id="result-rectangle-area" class="result"></div>
+            </div>
+            <div id="rectangle-perimeter">
+                <div class="keliling-persegi-panjang">
+                    <h2>Keliling Persegi Panjang</h2>
+                </div>
+                <!-- <h2>Keliling Persegi Panjang</h2> -->
+                <img src="img/rectangle.jpeg" alt="rectangle"/>
+                <p>Masukkan nilai panjang dan lebar untuk menghitung keliling persegi panjang.</p>
+                <form action="">
+                    <label for="length">Panjang:</label><br>
+                    <input type="number" id="length" name="length"><br><br>
+                    <label for="width">Lebar:</label><br>
+                    <input type="number" id="width" name="width"><br><br>
+                    <input type="submit" value="Submit">
+                    <button type="reset" onclick="resetForm('rectangle-perimeter')">Reset</button>
+                </form> 
+                <div id="result-rectangle-perimeter" class="result"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
